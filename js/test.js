@@ -1,13 +1,24 @@
-let start = 10
-let end = 20
-let divisor = 5
-function findNumber(start, end, divisor) {
-    for (let i = start; i <= end; i++) {
-    if(i % divisor === 0) {
-      return i;
-    }   
-  }  
-} 
-let result = findNumber(start, end, divisor);
-console.log(result);
 
+const language = prompt("Введіть назву мови програмування").trim();
+
+function getLanguage(language) {
+  switch (language) {
+    case "PHP";
+      return ('Расмус Лердорф');
+      break;
+  
+    case "JS";
+      return ('Брендан Ейх');
+      break
+  
+    case "Java";
+      return ('Джеймс Гослінг');
+      break
+  
+    case "Python";
+      return ('Гвідо ван Россум');
+      break
+    default
+      return ('Invalid language');
+  }
+}

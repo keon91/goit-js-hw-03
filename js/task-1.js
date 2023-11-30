@@ -1,9 +1,10 @@
 'use strict'
 function slugify(title) {
-    let newTitle = slugify.toLoverCase();
-    let newString =  title.replaceAll(" ", "-")
-}
 
+    let newTitle = title.toLowerCase();
+    let newString = newTitle.replaceAll(" ", "-");
+    return newString;
+}
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
 console.log(slugify("English for developer")); // "english-for-developer"
